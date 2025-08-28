@@ -1,0 +1,6 @@
+Impact_Category,Metric,Current_Value,Baseline_Value,Impact_Description,Severity
+Shipping Rate Increases,Rate Spike %,15,0,Sea freight rates increased 5-15% as exporters rush to beat tariff deadlines,High
+Freight Cost Changes,Cost per Container (USD),2500,1700,"East Coast: $2,400-$2,600, West Coast: $2,100-$2,300 per container",High
+Business Disruption,Small Business Affected %,50,10,50% of small businesses report supplier disruptions and delays,Critical
+Market Switching,Alternative Sourcing %,35,5,"35% of importers switching to alternative suppliers from Vietnam, Bangladesh",Moderate
+Financial Stress,Expected Higher Costs %,78,25,78% of small businesses expect higher costs due to tariffs,Critical

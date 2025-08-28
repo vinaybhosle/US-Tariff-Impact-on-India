@@ -1,0 +1,233 @@
+{
+  "volume_data": {
+    "companies": [
+      "Hapag-Lloyd",
+      "Maersk",
+      "CMA CGM",
+      "MSC",
+      "Industry Average"
+    ],
+    "q1_actual": [
+      3.305,
+      3.2,
+      2.8,
+      4.1,
+      3.35
+    ],
+    "q2_actual": [
+      3.44,
+      3.3,
+      2.7,
+      4.0,
+      3.36
+    ],
+    "q3_forecast": [
+      3.1,
+      3.0,
+      2.4,
+      3.7,
+      3.05
+    ],
+    "q4_forecast": [
+      2.8,
+      2.7,
+      2.2,
+      3.4,
+      2.78
+    ],
+    "h1_growth": [
+      10.6,
+      4.2,
+      -0.3,
+      3.0,
+      4.4
+    ],
+    "h2_growth": [
+      -13.8,
+      -13.2,
+      -14.3,
+      -12.2,
+      -13.4
+    ]
+  },
+  "customer_impact": {
+    "Impact_Category": [
+      "Shipping Rate Increases",
+      "Freight Cost Changes",
+      "Business Disruption",
+      "Market Switching",
+      "Financial Stress"
+    ],
+    "Metric": [
+      "Rate Spike %",
+      "Cost per Container (USD)",
+      "Small Business Affected %",
+      "Alternative Sourcing %",
+      "Expected Higher Costs %"
+    ],
+    "Current_Value": [
+      15,
+      2500,
+      50,
+      35,
+      78
+    ],
+    "Baseline_Value": [
+      0,
+      1700,
+      10,
+      5,
+      25
+    ],
+    "Impact_Description": [
+      "Sea freight rates increased 5-15% as exporters rush to beat tariff deadlines",
+      "East Coast: $2,400-$2,600, West Coast: $2,100-$2,300 per container",
+      "50% of small businesses report supplier disruptions and delays",
+      "35% of importers switching to alternative suppliers from Vietnam, Bangladesh",
+      "78% of small businesses expect higher costs due to tariffs"
+    ],
+    "Severity": [
+      "High",
+      "High",
+      "Critical",
+      "Moderate",
+      "Critical"
+    ]
+  },
+  "industry_impact": {
+    "Impact_Area": [
+      "Port Operations",
+      "Supply Chain",
+      "Logistics Costs",
+      "Route Management",
+      "Contract Terms"
+    ],
+    "Description": [
+      "Port congestion and delays",
+      "Tier 2/3 supplier disruption",
+      "Insurance and warehousing cost increases",
+      "Capacity reallocation and blank sailings",
+      "Mid-term contract renegotiations"
+    ],
+    "Impact_Level": [
+      "High",
+      "Critical",
+      "Moderate",
+      "High",
+      "High"
+    ],
+    "Cost_Increase_%": [
+      25,
+      40,
+      15,
+      20,
+      10
+    ],
+    "Timeline": [
+      "Immediate",
+      "3-6 months",
+      "Ongoing",
+      "Q3-Q4 2025",
+      "Immediate"
+    ],
+    "Mitigation_Strategy": [
+      "Alternative port routing",
+      "Supply chain mapping and diversification",
+      "Operational efficiency improvements",
+      "Fleet rebalancing to other trade lanes",
+      "Force majeure clauses and price adjustments"
+    ]
+  },
+  "product_impact": {
+    "Product_Sector": [
+      "Textiles & Apparel",
+      "Seafood",
+      "Gems & Jewelry",
+      "Auto Components",
+      "Chemicals",
+      "Agriculture",
+      "Steel & Aluminum",
+      "Furniture"
+    ],
+    "Export_Value_USD_Billion": [
+      10.8,
+      2.4,
+      10.0,
+      7.0,
+      3.0,
+      6.0,
+      4.7,
+      1.0
+    ],
+    "US_Market_Share_%": [
+      35,
+      32,
+      40,
+      25,
+      13,
+      20,
+      15,
+      59
+    ],
+    "Effective_Tariff_%": [
+      63.9,
+      58.6,
+      52.1,
+      50.0,
+      54.0,
+      50.0,
+      50.0,
+      52.9
+    ],
+    "Expected_Volume_Drop_%": [
+      70,
+      65,
+      60,
+      45,
+      55,
+      50,
+      25,
+      60
+    ],
+    "Job_Impact_Thousands": [
+      500,
+      150,
+      400,
+      200,
+      100,
+      300,
+      50,
+      80
+    ],
+    "Key_Regions": [
+      "Tirupur, NCR, Bengaluru",
+      "Visakhapatnam",
+      "Surat, Mumbai",
+      "Chennai, Pune",
+      "Gujarat, Maharashtra",
+      "Punjab, Haryana",
+      "Odisha, Jharkhand",
+      "Multiple clusters"
+    ],
+    "Competitiveness_vs": [
+      "Bangladesh, Vietnam",
+      "Ecuador",
+      "China, Belgium",
+      "Mexico, Thailand",
+      "Japan, South Korea",
+      "Pakistan, Thailand",
+      "Brazil, Turkey",
+      "Turkey, Vietnam"
+    ]
+  },
+  "summary_metrics": {
+    "total_export_value_at_risk": 44.9,
+    "average_tariff_rate": 53.9375,
+    "total_jobs_at_risk": 1780,
+    "worst_affected_sector": "Textiles & Apparel",
+    "highest_volume_drop": 70,
+    "customer_rate_increase": 15,
+    "industry_cost_increase": 25,
+    "small_business_impact": 78
+  }
+}

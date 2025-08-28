@@ -1,0 +1,11 @@
+Rank,Company_Name,Sector,Primary_Export_Products,US_Export_Value_USD_Million,US_Market_Dependency_%,Expected_Impact_Level,Jobs_at_Risk_Thousands,Key_Manufacturing_Locations,Mitigation_Strategy
+1,Shahi Exports,Textiles & Apparel,"Garments, readymade clothing",850,45,Critical,35,"Bengaluru, NCR","Diversifying to EU, Middle East markets"
+2,Welspun India,Home Textiles,"Bedding, home textile products",420,35,High,22,"Maharashtra, Gujarat","Expanding domestic market, exploring alternatives"
+3,Titan Company,Gems & Jewelry,"Diamond jewelry, gold jewelry",380,25,High,18,"Mumbai, Delhi","Reducing US exposure, focusing on domestic growth"
+4,Bharat Forge,Auto Components,"Automotive forging, components",320,30,Moderate,15,"Pune, Maharashtra",Shifting some production to Mexico under USMCA
+5,Richa Global Exports,Garments & Apparel,"Export garments, clothing",280,50,Critical,25,"NCR, Punjab","Exploring Bangladesh, Vietnam partnerships"
+6,Indo Count Industries,Home Textiles,"Bed linen, home textiles",250,40,High,16,Maharashtra,"Market diversification to Europe, Australia"
+7,Gokaldas Exports,Apparel Manufacturing,"Branded apparels, garments",230,48,Critical,28,"Bengaluru, Tamil Nadu","Strengthening domestic brands, non-US markets"
+8,Rajesh Exports,Gems & Jewelry,"Gold jewelry, diamond jewelry",200,22,Moderate,12,"Mumbai, Rajasthan",Focusing on domestic market expansion
+9,KPR Mill,Textiles & Garments,"Yarn, fabric, garments",180,38,High,20,Tamil Nadu,Diversifying to other export destinations
+10,Trident Limited,Textiles & Home Products,"Towels, bed linen, yarn",150,35,High,18,"Punjab, Haryana",Expanding to domestic and alternative markets

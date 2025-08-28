@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 US Tariff Impact Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <h1>2025 US Tariff Impact Analysis - 50% Tariff on India</h1>
+            <p class="header-subtitle">Comprehensive Analysis Across Volume, Customer, Industry & Product Impacts</p>
+        </header>
+
+        <!-- Key Summary Metrics Cards -->
+        <section class="metrics-section">
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-label">Total Export Value at Risk</div>
+                    <div class="metric-value">
+                        <span class="metric-primary">$44.9B</span>
+                        <span class="metric-secondary">USD Billion</span>
+                    </div>
+                    <div class="metric-comparison">
+                        <span class="metric-forecast">Across 8 Key Sectors</span>
+                        <span class="status status--error">Critical</span>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Jobs at Risk</div>
+                    <div class="metric-value">
+                        <span class="metric-primary">1.78M</span>
+                        <span class="metric-secondary">Million Jobs</span>
+                    </div>
+                    <div class="metric-comparison">
+                        <span class="metric-forecast">Direct Impact</span>
+                        <span class="status status--error">High Impact</span>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Average Tariff Rate</div>
+                    <div class="metric-value">
+                        <span class="metric-primary">53.9%</span>
+                        <span class="metric-secondary">Weighted Average</span>
+                    </div>
+                    <div class="metric-comparison">
+                        <span class="metric-forecast">Up from 0-5%</span>
+                        <span class="metric-change negative">+50pp</span>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <div class="metric-label">Worst Affected Sector</div>
+                    <div class="metric-value">
+                        <span class="metric-primary">Textiles</span>
+                        <span class="metric-secondary">& Apparel</span>
+                    </div>
+                    <div class="metric-comparison">
+                        <span class="metric-forecast">70% Volume Drop</span>
+                        <span class="status status--error">Severe</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <section class="tabs-section">
+            <div class="tabs-container">
+                <button class="tab-button active" data-tab="volume">Volume Impact</button>
+                <button class="tab-button" data-tab="customer">Customer Impact</button>
+                <button class="tab-button" data-tab="industry">Industry Impact</button>
+                <button class="tab-button" data-tab="product">Product Impact</button>
+            </div>
+        </section>
+
+        <!-- Tab Content -->
+        <main class="tab-content-container">
+            <!-- Volume Impact Tab -->
+            <div id="volume-tab" class="tab-content active">
+                <div class="tab-header">
+                    <h2>Container Volume Analysis</h2>
+                    <p>Quarterly shipping volume trends showing actual vs forecast performance</p>
+                </div>
+
+                <!-- Company Selector -->
+                <div class="selector-container">
+                    <label for="company-select" class="selector-label">Focus on Company:</label>
+                    <select id="company-select" class="form-control company-selector">
+                        <option value="all">All Companies</option>
+                        <option value="0">Hapag-Lloyd</option>
+                        <option value="1">Maersk</option>
+                        <option value="2">CMA CGM</option>
+                        <option value="3">MSC</option>
+                        <option value="4">Industry Average</option>
+                    </select>
+                </div>
+
+                <!-- Volume Chart -->
+                <div class="chart-section">
+                    <div class="chart-container" style="position: relative; height: 400px;">
+                        <canvas id="volumeChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Volume Data Table -->
+                <div class="table-section">
+                    <h3>Detailed Volume Data (TTEU)</h3>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Company</th>
+                                    <th>Q1 Actual</th>
+                                    <th>Q2 Actual</th>
+                                    <th>H1 Total</th>
+                                    <th>Q3 Forecast</th>
+                                    <th>Q4 Forecast</th>
+                                    <th>H2 Total</th>
+                                    <th>H1 vs H2</th>
+                                </tr>
+                            </thead>
+                            <tbody id="volume-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Impact Tab -->
+            <div id="customer-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Customer Impact Analysis</h2>
+                    <p>Effects on Indian exporters, shipping costs, and US importer behavior</p>
+                </div>
+
+                <!-- Section 1: Customer Impact Overview -->
+                <div class="impact-overview-section">
+                    <h3>Customer Impact Overview</h3>
+                    <div class="impact-metrics-grid">
+                        <div class="impact-metric-card">
+                            <div class="impact-metric-value">15%</div>
+                            <div class="impact-metric-label">Shipping Rate Increases</div>
+                            <div class="impact-metric-desc">Sea freight rates surge as exporters rush to beat deadlines</div>
+                        </div>
+                        <div class="impact-metric-card">
+                            <div class="impact-metric-value">$2,500</div>
+                            <div class="impact-metric-label">Freight Cost per Container</div>
+                            <div class="impact-metric-desc">Average container cost increase across routes</div>
+                        </div>
+                        <div class="impact-metric-card">
+                            <div class="impact-metric-value">50%</div>
+                            <div class="impact-metric-label">Small Business Disruption</div>
+                            <div class="impact-metric-desc">Small businesses reporting supplier disruptions</div>
+                        </div>
+                        <div class="impact-metric-card">
+                            <div class="impact-metric-value">35%</div>
+                            <div class="impact-metric-label">Customer Switching Behavior</div>
+                            <div class="impact-metric-desc">Importers switching to alternative suppliers</div>
+                        </div>
+                    </div>
+                    
+                    <div class="impact-summary">
+                        <p>The 50% tariff on Indian exports has triggered immediate market disruptions across shipping lanes. Indian exporters are experiencing unprecedented pressure as US importers rapidly pivot to alternative sourcing strategies, while container shipping rates have spiked due to urgent pre-tariff shipments.</p>
+                    </div>
+                </div>
+
+                <!-- Section 2: Top 10 Indian Customers -->
+                <div class="top-customers-section">
+                    <div class="section-header">
+                        <h3>Top 10 Indian Customers/Exporters Most Affected</h3>
+                        <div class="search-container">
+                            <input type="text" id="customer-search" class="form-control" placeholder="Search companies...">
+                        </div>
+                    </div>
+                    
+                    <!-- Summary Stats Box -->
+                    <div class="summary-stats-box">
+                        <div class="summary-stat">
+                            <span class="stat-value">$3.26B</span>
+                            <span class="stat-label">Total Export Value at Risk</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-value">209K</span>
+                            <span class="stat-label">Total Jobs at Risk</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-value">36.8%</span>
+                            <span class="stat-label">Average US Dependency</span>
+                        </div>
+                        <div class="summary-stat">
+                            <span class="stat-value">3/10</span>
+                            <span class="stat-label">Critical Companies</span>
+                        </div>
+                    </div>
+
+                    <!-- Top 10 Customers Table -->
+                    <div class="table-section">
+                        <div class="table-container">
+                            <table class="data-table customers-table">
+                                <thead>
+                                    <tr>
+                                        <th data-sort="rank">Rank</th>
+                                        <th data-sort="company">Company Name</th>
+                                        <th data-sort="sector">Sector</th>
+                                        <th data-sort="products">Primary Export Products</th>
+                                        <th data-sort="value">US Export Value ($M)</th>
+                                        <th data-sort="dependency">US Market Dependency (%)</th>
+                                        <th data-sort="impact">Impact Level</th>
+                                        <th data-sort="jobs">Jobs at Risk (000s)</th>
+                                        <th data-sort="locations">Key Manufacturing Locations</th>
+                                        <th data-sort="mitigation">Mitigation Strategy</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="customers-table-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Customer Switching Analysis -->
+                <div class="switching-analysis-section">
+                    <h3>Customer Switching Analysis</h3>
+                    <div class="switching-grid">
+                        <div class="switching-destinations">
+                            <h4>Where US Importers are Shifting</h4>
+                            <div class="destination-list">
+                                <div class="destination-item">
+                                    <div class="destination-country">Vietnam</div>
+                                    <div class="destination-share">28%</div>
+                                    <div class="destination-products">Textiles, Electronics</div>
+                                </div>
+                                <div class="destination-item">
+                                    <div class="destination-country">Bangladesh</div>
+                                    <div class="destination-share">22%</div>
+                                    <div class="destination-products">Apparel, Garments</div>
+                                </div>
+                                <div class="destination-item">
+                                    <div class="destination-country">China</div>
+                                    <div class="destination-share">18%</div>
+                                    <div class="destination-products">Manufactured Goods</div>
+                                </div>
+                                <div class="destination-item">
+                                    <div class="destination-country">Mexico</div>
+                                    <div class="destination-share">15%</div>
+                                    <div class="destination-products">Auto Components</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="impact-severity">
+                            <h4>Business Disruption Statistics</h4>
+                            <div class="disruption-stats">
+                                <div class="disruption-item">
+                                    <span class="disruption-metric">78%</span>
+                                    <span class="disruption-label">Small businesses expect higher costs</span>
+                                    <span class="severity-indicator critical"></span>
+                                </div>
+                                <div class="disruption-item">
+                                    <span class="disruption-metric">50%</span>
+                                    <span class="disruption-label">Report supplier disruptions</span>
+                                    <span class="severity-indicator high"></span>
+                                </div>
+                                <div class="disruption-item">
+                                    <span class="disruption-metric">35%</span>
+                                    <span class="disruption-label">Active supplier switching</span>
+                                    <span class="severity-indicator moderate"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Industry Impact Tab -->
+            <div id="industry-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Industry & Supply Chain Impact</h2>
+                    <p>Supply chain disruptions, logistics costs, and operational challenges</p>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="chart-section">
+                        <div class="chart-container" style="position: relative; height: 350px;">
+                            <canvas id="industryChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="table-section">
+                        <h3>Industry Impact Breakdown</h3>
+                        <div class="table-container">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Impact Area</th>
+                                        <th>Description</th>
+                                        <th>Cost Increase</th>
+                                        <th>Timeline</th>
+                                        <th>Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="industry-table-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-section">
+                    <h3>Impact Timeline</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-item immediate">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Immediate</h4>
+                                <p>Port congestion, contract renegotiations</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item short-term">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>3-6 Months</h4>
+                                <p>Supply chain disruption, capacity reallocation</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item ongoing">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>Ongoing</h4>
+                                <p>Logistics cost increases, efficiency improvements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Impact Tab -->
+            <div id="product-tab" class="tab-content">
+                <div class="tab-header">
+                    <h2>Product & Sector Impact</h2>
+                    <p>Sector-wise analysis of tariff effects, volume drops, and job impacts</p>
+                </div>
+
+                <div class="impact-grid">
+                    <div class="chart-section">
+                        <div class="chart-container" style="position: relative; height: 400px;">
+                            <canvas id="productChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="chart-section">
+                        <div class="chart-container" style="position: relative; height: 350px;">
+                            <canvas id="jobImpactChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-section">
+                    <h3>Sector Impact Analysis</h3>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Sector</th>
+                                    <th>Export Value ($B)</th>
+                                    <th>Market Share (%)</th>
+                                    <th>Tariff Rate (%)</th>
+                                    <th>Volume Drop (%)</th>
+                                    <th>Job Impact (K)</th>
+                                    <th>Key Regions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="product-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="insights-section">
+                    <div class="insight-card">
+                        <h4>Textiles & Apparel</h4>
+                        <p>Most severely affected sector with 70% volume drop expected, impacting 500K jobs primarily in Tirupur, NCR, and Bengaluru regions.</p>
+                    </div>
+                    <div class="insight-card">
+                        <h4>Regional Impact</h4>
+                        <p>Key manufacturing hubs face significant disruption, with Gujarat and Maharashtra clusters particularly vulnerable in chemicals and auto components.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Product_Sector,Export_Value_USD_Billion,US_Market_Share_%,Effective_Tariff_%,Expected_Volume_Drop_%,Job_Impact_Thousands,Key_Regions,Competitiveness_vs
+Textiles & Apparel,10.8,35,63.9,70,500,"Tirupur, NCR, Bengaluru","Bangladesh, Vietnam"
+Seafood,2.4,32,58.6,65,150,Visakhapatnam,Ecuador
+Gems & Jewelry,10.0,40,52.1,60,400,"Surat, Mumbai","China, Belgium"
+Auto Components,7.0,25,50.0,45,200,"Chennai, Pune","Mexico, Thailand"
+Chemicals,3.0,13,54.0,55,100,"Gujarat, Maharashtra","Japan, South Korea"
+Agriculture,6.0,20,50.0,50,300,"Punjab, Haryana","Pakistan, Thailand"
+Steel & Aluminum,4.7,15,50.0,25,50,"Odisha, Jharkhand","Brazil, Turkey"
+Furniture,1.0,59,52.9,60,80,Multiple clusters,"Turkey, Vietnam"
